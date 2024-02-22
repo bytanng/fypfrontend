@@ -1,0 +1,143 @@
+#howitworks {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    min-height : auto;
+}
+
+.howitworksTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.howitworksDescription{
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.howitworksBarTextDesc{
+    margin-top: 1rem;
+    width: 10vw;
+    font-size: 0.9rem;
+    font-weight: 350;
+}
+
+.howitworksBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #F5F5F7;
+    flex-wrap: wrap;
+}
+
+.step{
+    margin: -0.5rem 8% 4rem;
+    height: auto;
+    width: auto;
+    padding-bottom: 1.5rem;
+}
+
+.switchBtn{
+    width: 100%;
+    background: #F5F5F7;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    min-width: 260px;
+}
+
+.switchBtn1{
+    background-color: #0171E3;
+    border: none;
+    position:sticky;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 8rem;
+    height: 3rem;
+}
+
+.switchBtn2{
+    background-color: #E37301;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 8rem;
+    height: 3rem;
+}
+
+.switchBtn2:hover{
+    cursor: pointer;
+    background-color: rgba(227, 115, 1, 0.8)
+}
+
+.switchBtn1:hover{
+    cursor: pointer;
+    background-color: rgba(1, 113, 227, 0.8)
+}
+
+.howitworksBarImg{
+    object-fit: cover;
+    width: 13rem;
+    height: 12rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.howitworksBarText>p{
+    font-size: 0.9rem;
+    font-weight: 375;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width:720px){
+    .howitworksBarText>p{
+        font-size: 2vw;
+    }
+    .howitworksBarImg1{
+        margin-top:0.7rem;
+    }
+    .howitworksBarImg2{
+        margin-top:0.3rem;
+    }
+}
+
+@media screen and (max-width:560px){
+    .howitworksBarText>p{
+        font-size: 3vw;
+    }
+
+    .howitworksBarImg1{
+        height:2.25rem;
+        width:2.25rem;
+        margin-top:2rem;
+    }
+
+    .howitworksBarImg2{
+        height:2.25rem;
+        width:2.25rem;
+        margin-top:2rem;
+    }
+
+    .howitworksBarText>h2{
+        font-size: 5vw;
+    }
+}

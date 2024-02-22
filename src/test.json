@@ -1,0 +1,510 @@
+//home
+//success response
+{
+    "status": "success",
+    "carousellprojects": [
+        {
+            "id": "1",
+            "title": "proj1",
+            "details": "this is proj1",
+            "rolesavail": [
+                {
+                    "title": "software eng",
+                    "skills": "html"
+                }
+            ],
+            "image": "./proj1.jpg"
+        }
+        //repeat similar strucutre for each carousell projects, n = 4
+    ],
+    "toppicksprojects": [
+        {
+            "id": "1",
+            "title": "proj1",
+            "details": "this is proj1",
+            "image": "./proj1.jpg"
+        }
+        //repeat similar strucutre for top picks projects, n = 8
+    ]
+}
+//error response
+{
+    "status": "error",
+    "message": "Error example"
+}
+//contact
+//request
+{
+    "name": "James",
+    "email": "James@hotmail.com",
+    "subject": "Inquiries",
+    "comments": "I am interested",
+}
+//response
+{
+    "status": "success",
+    "message": "Contact form submitted successfully, We will get back to you soon."
+}
+//signup
+//request
+{
+    "firstname": "example",
+    "lastname": "user",
+    "username": "example_user",
+    "email": "user@example.com",
+    "password": "secure_password"
+}
+//success response 
+{
+    "status": "success",
+    "message": "User account created successfully."
+}
+//error response
+{
+    "status": "error",
+    "message": "Error example"
+}
+//login
+//request
+{
+    "identifier": "example_user", //either usernam or email
+    "password": "secure_password"
+}
+//success response
+{
+    "status": "success",
+    "message": "You have been logged in successfully.",
+    "token": ""
+}
+//error response
+{
+    "status": "error",
+    "message": "Invalid username, email, or password. Please try again."
+}
+//forgot-password
+//request
+{
+    "email": "user@example.com"
+}
+//success response
+{
+    "status": "success",
+    "message": "Password reset email has been sent, please check your email for reset instructions."
+}
+//error response
+{
+    "status": "error",
+    "message": "No user found with the provided email."
+}
+//myprojects (active and closed)
+//request headers
+//`Authorization`: Token
+//success response
+{
+    "status": "success",
+    "myprojects": [
+        {
+            "id": "1",
+            "title": "example",
+            "role": "owner",
+            "phase": "initiation",
+            "recruiting": "open",
+            "owner": "james",
+            "creationdate": "",
+            "lastative": "",
+        }
+        {
+            //repeat for remaining projects
+        }
+    ]
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//myprojects (liked)
+//request headers
+//`Authorization`: Token
+//success response
+{
+    "status": "success",
+    "likedprojects": [
+        {
+            "id": "1",
+            "title": "example",
+            "phase": "initiation",
+            "recruiting": "open",
+            "owner": "james",
+            "creationdate": "",
+            "lastative": "",
+        }
+        {
+            //repeat for remaining projects
+        }
+    ]
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//remove liked projects
+//request
+{
+    "projectids": "["1","2"]"
+}
+//success response
+{
+    "status": "success",
+    "message": "Liked projects removed successfully."
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//projectlist
+//success response
+{
+    "status": "success",
+    "data": [
+        {
+            "id": "1",
+            "title": "proj1",
+            "details": "this is proj1",
+            "rolesavail": [
+                {
+                    "title": "software engineer",
+                    "skills": "html"
+                }
+            ],
+            "phase": "onboarding",
+            "recruiting": "open",
+            "lastactive": ""
+        }
+        //repeat for all projs
+    ]
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//userlist
+//success response
+{
+    "status": "success",
+    "data": [
+        {
+            "id": "1",
+            "username": "James",
+            "Course": "Computer Science",
+            "year": "3",
+            "skills": "html"
+        }
+        //repeat for other users
+    ]
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//projectpage (retrieve)
+//request headers
+//`Authorization`: Token
+//success response
+{
+    "status": "success",
+    "data": [
+        {
+            "projectdetails": [
+                {
+                    "projectid": "1",
+                    "title": "proj1",
+                    "details": "this is proj1",
+                    "phase": "onboarding",
+                    "recruiting": "open",
+                    "creationdate": "",
+                    "rolesavail": [
+                        {
+                            "title": "software engineer",
+                            "skills": "html"
+                        }
+                    ],
+                    "projectimage": "/imagedir",
+                    "category": "software",
+                    "lastactive": "",
+                    "views": "5",
+                    "likes": "5",
+                }
+            ],
+            "ownerdetails": [
+                {
+                    "userid": "1",
+                    "firstname": "jason",
+                    "lastname": "lim",
+                    "course": "computer science",
+                    "matyear": "2020",
+                    "desc": "i am jason",
+                    "email": "jason@hotmail.com",
+                    "profileimage": "/imagedir"
+                }
+            ],
+            "teamdetails": [
+                {
+                    "projectmemberID": "2",
+                    "userid": "2",
+                    "firstname": "raj",
+                    "lastname": "kumar",
+                    "desc": "i am kumar",
+                    "role": "front-end engineer",
+                    "image": "imagedir"
+                }
+                //repeat for all team members
+            ],
+            "similarprojects": [
+                {
+                    "projectid": "2",
+                    "title": "proj2",
+                }
+                //repeat for all similar projects
+            ]
+        }
+    ]
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//projectpage (edit)
+//request headers
+//`Authorization`: Token
+//`Content-Type`: `application/json`
+//request
+{
+    "data": [
+        {
+            "projectdetails": [
+                {
+                    "projectid": "1",
+                    "title": "proj1",
+                    "details": "this is proj1",
+                    "phase": "onboarding",
+                    "recruiting": "open",
+                    "rolesavail": [
+                        {
+                            "title": "software engineer",
+                            "skills": "html"
+                        }
+                    ],
+                    "projectimage": "/imagedir",
+                    "category": "software",
+                    "projprivatemode": "true"
+                }
+            ],
+            "teamdetails": [
+                {
+                    "projectmemberID": "2",
+                    "userid": "2",
+                    "firstname": "raj",
+                    "lastname": "kumar",
+                    "desc": "i am kumar",
+                    "role": "front-end engineer",
+                }
+            ],
+        }
+    ]
+}
+//success response
+{
+    "status": "success",
+    "message": "project details updated"
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//projectpage (updateview)
+//request
+{
+    "projectid": "1"
+}
+//success response
+{
+    "status": "success",
+    "message": "view count updated"
+}
+{
+    "status": "error",
+    "message": "error message"
+}
+//projectpage (user likes project)
+//request headers
+//`Authorization`: Token
+//`Content-Type`: `application/json`
+//request
+{
+    "userid": "1",
+    "projectid": "1"
+}
+//success response
+{
+    "status": "success",
+    "message": "project liked successfully."
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+//userpage (retrieve)
+//request headers
+//`Authorization`: Token
+//success response
+{
+    "status": "success",
+    "data": {
+        "userdetails": [
+            {
+                "userid": "1",
+                "img": "/imgdir",
+                "firstname": "jason",
+                "lastname": "lim",
+                "course": "computer science",
+                "matyear": "2020",
+                "tagline": "tech enthusiast",
+                "cvlink": "/cv",
+                "email": "jasonlim@hotmail.com",
+                "desc": "I am Jason",
+                "userskillset": [
+                    {
+                        "skillname": "html"
+                    }
+                    //repeat for all skills
+                ],
+            }
+        ],
+        "projects": [
+            {
+                "projectid": "1",
+                "projectname": "mobile app"
+            }
+            //repeat for all user's project
+        ],
+        "portfolio": [
+            {
+                "title": "app",
+                "image": "/portimage",
+                "portlink": "/portlink"
+            }
+            //repeat for all user's portfolio
+        ],
+        "experience": [
+            {
+                "title": "softeng",
+                "daterange": "",
+                "company": "",
+                "desc": "experience"
+            }
+            //repeat for all user's experience
+        ],
+        "education": [
+            {
+                "title": "bachelor in ...",
+                "daterange": "",
+                "sch": "NTU",
+                "desc": "participated in xyz"
+            }
+            //repeat for all user's education
+        ],
+        "certifications": [
+            {
+                "title": "XYZ",
+                "daterange": "",
+                "desc": "xyz",
+                "link": "/certification"
+            }
+            //repeat for all user's certification
+        ]
+    }
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}
+
+//userpage (edit)
+//request headers
+//`Authorization`: Token
+//`Content-Type`: `application/json`
+//request
+{
+    "data": {
+        "userid": "1",
+        "img": "/imgdir",
+        "firstname": "jason",
+        "lastname": "lim",
+        "course": "computer science",
+        "matyear": "2020",
+        "tagline": "tech enthusiast",
+        "cvlink": "/cv",
+        "email": "jasonlim@hotmail.com",
+        "desc": "I am Jason",
+        "userskillset": [
+            {
+                "skillname": "html"
+            }
+            //repeat for all skills
+        ],
+        "portfolio": [
+            {
+                "title": "app",
+                "image": "/portimage",
+                "portlink": "/portlink"
+            }
+            //repeat for all user's portfolio
+        ],
+        "experience": [
+            {
+                "title": "softeng",
+                "daterange": "",
+                "company": "",
+                "desc": "experience"
+            }
+            //repeat for all user's experience
+        ],
+        "education": [
+            {
+                "title": "bachelor in ...",
+                "daterange": "",
+                "sch": "NTU",
+                "desc": "participated in xyz"
+            }
+            //repeat for all user's education
+        ],
+        "certifications": [
+            {
+                "title": "XYZ",
+                "daterange": "",
+                "desc": "xyz",
+                "link": "/certification"
+            }
+            //repeat for all user's certification
+        ]
+    }
+}
+//success response
+{
+    "status": "success",
+    "message": "project liked successfully."
+}
+//error response
+{
+    "status": "error",
+    "message": "error message"
+}

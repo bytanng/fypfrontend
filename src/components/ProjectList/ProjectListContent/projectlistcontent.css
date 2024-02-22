@@ -1,0 +1,330 @@
+
+.projectlistbody{
+    margin-top: -2rem;
+}
+
+.projectlist-grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem;
+    gap: 2rem;
+    background-color: #F5F5F7;
+}
+
+.projectlist-grid-container2{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.projectlist-grid-item {
+    padding: 2rem 2.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projectlist-grid-1{
+    text-align: center;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    min-width: 15.8rem;
+}
+
+.projectlist-grid-2 {
+    height: fit-content;
+    width: 25.5vw;
+    min-width: 15.8rem;
+}
+
+.projectlist-grid-3{
+    height: fit-content;
+    width: 70vw;
+    min-width: 15.8rem;
+}
+
+@media screen and (max-width:1000px) {
+    .projectlist-grid-container2{
+        flex-wrap: wrap;
+    }
+    .projectlist-grid-2 {
+        height: fit-content;
+        width: 100%;
+    }
+    .projectlist-grid-3 {
+        height: fit-content;
+        width: 100%;
+    }
+    .projectlistfiltersearchBar{
+        max-width: 30%;
+        min-width: 7rem;
+    }
+
+}
+
+.projectlistrecruiting{
+    color: #09CE68;
+}
+
+.projectlistsearchBar{
+    font-size: medium;
+    width: 70%;
+    max-width: 70%;
+    padding: 0.5rem 1rem;
+    color: black;
+    border: none;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background: #F5F5F7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projectlistfiltersearchBar{
+    font-size: small;
+    width: 66%;
+    padding: 0.2rem 2rem;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    margin-bottom: 1rem;
+}
+
+.search-icon{
+    position: absolute;
+    margin-left: 0.6rem;
+    margin-top: 0.35rem;
+    color: grey;
+}
+
+.projectlistsearchBtn{
+    background: #09CE78;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin: 2.5rem 0rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projectbarresult-grid-1{
+    border-radius: 0.5rem;
+}
+
+.projectbarresult-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.projectbarresult-grid-2{
+    color:#0066CC;
+    margin-left: 1rem;
+}
+
+.projectroleselector{
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 390;
+    font-size: 0.9rem;
+}
+
+.projectimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.projectskillsets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projectbarresult-grid-3{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.projectbarresult-grid-4{
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin: 0 0 0.5rem 1rem;
+}
+
+.projectbarresult-grid-5{
+    font-size: 0.8rem;
+    margin: -0.6rem 0 0.5rem 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projectbarresult-grid-6{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.clearbtn{
+    color: #0066CC;
+    float: inline-end;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.categoryfilter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.skillsreqfilter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.phasefilter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.recfilter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.filtertitle{
+    margin: 1rem 0;
+}
+
+.listchkboxname{
+    font-weight: 350;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.projectlistresultstitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.projectlistsorting{
+    font-weight: 350;
+    font-size: small;
+    margin-left: auto;
+}
+
+.projectlistresultheader{
+    display: inline-block;
+}
+
+/* .projectlistresultbar{
+    width: 100%;
+    height: 13rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 2rem 0 0 2rem;
+    border: 1px solid #CDCDCD;
+    font-weight: 350;
+    margin-bottom: 1rem;
+    background-color: #F5F5F7;
+} */
+
+.projectbarresult-grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 0.5rem;
+    background-color: #F5F5F7;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 350;
+    margin-bottom: 1rem;
+}
+
+.projectlistresultbarcontent{
+    width: auto;
+    height: auto;
+}
+
+.projectlistphase{
+    border-radius: 1rem;
+    background-color: #09CE78;
+    padding: 0.1rem 0.6rem;
+    color: white;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.projectlistskillstag{
+    margin-bottom: 0.8rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    background-color: #CE095F;
+    color: white;
+    padding: 0.1rem 0.4rem;
+}
+
+.projectlistImg{
+    margin-bottom: -1rem;
+    object-fit: cover;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projectlistpagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: small;
+    font-weight: 350;
+  }
+  
+  .projectlistpagination a {
+    color: black;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+  }
+  
+  .projectlistpaginationn a.active {
+    background-color: #0066CC;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .projectlistpagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 0.5rem;
+  }
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -50vw;
+    }
+}
+
+
+@media screen and (max-width:560px) {
+    .projectlistskillstag{
+        margin-bottom: 0.5rem;
+    }
+    .projectlistphase{
+        margin-bottom: 0.2rem;
+    }
+}

@@ -1,0 +1,117 @@
+#contactPage {
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contactPageTitle{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+@media screen and (max-width: 720px){
+    .contactForm{
+        padding: 2rem;
+    }
+    #contact{
+        padding-top: 3.6rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 690px){
+    #contact{
+        padding-top: 3.67rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.email{
+    font-size: medium;
+    width: 100%;
+    max-width: 25rem;
+    padding: 0.5rem 1rem;
+    color: black;
+    border: none;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background: #F5F5F7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.submitBtn{
+    background: #09CE78;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin: 2.5rem 0rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}
+
+.contactBtn{
+    background: #15F593;
+    margin: 1rem 0.5rem 1rem 0rem;
+    padding: 0.75rem 0.5rem;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+}
+
+.contactBtn2{
+    background: white;
+    margin: 1.9rem 0.6rem 1rem rem;
+    margin-bottom: 0.1rem;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    border-radius: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.svg2{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.submitBtn:hover,.contactBtn:hover, .contactBtn2:hover{
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+    cursor: pointer;
+  }

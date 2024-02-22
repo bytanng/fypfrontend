@@ -1,0 +1,241 @@
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: white;
+}
+
+.logo {
+    object-fit: contain;
+    height: 6rem;
+    max-width: 100%;
+    margin-left: 7rem;
+}
+
+.desktopMenuListItem {
+    margin: 1rem;
+    cursor: pointer;
+    color: black;
+}
+
+.desktopMenuListItem:hover {
+    color: grey;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid grey;
+}
+
+.desktopMenuBtns {
+    display: flex;
+    position: relative;
+    margin-right: 7rem;
+}
+
+.desktopMenuBtn {
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.2rem 0.2rem 0.5rem;
+    border: none;
+}
+
+.desktopMenuBtn:hover {
+    cursor: pointer;
+}
+
+.desktopMenuImg {
+    object-fit: fill;
+    height: 0.5rem;
+    width: 0.5rem;
+    margin: 0.5rem 0.5rem 0.8rem 0.8rem;
+    font-size: 1.2rem;
+}
+
+.active {
+    color: grey;
+    border-bottom: 3px solid grey;
+    padding-bottom: 0.5rem;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(30, 30, 30);
+    border-radius: 1rem;
+}
+
+.ListItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(40, 40, 40);
+}
+
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+    margin-right: 1rem;
+}
+
+.arrow-icon {
+    margin-left: 0.3rem;
+}
+
+@media screen and (max-width: 720px) {
+    .mobMenu {
+        display: flex;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
+
+    .searchText {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .logo {
+        margin-left: 1rem;
+    }
+    .desktopMenuBtns{
+        margin-right: 1rem;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    /* Adjust this value to position the dropdown to the left */
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    left: -80%;
+    border: none;
+    border-radius: 1rem;
+    /* Adjust this value to position the dropdown to the left */
+}
+
+.dropdown-item {
+    padding: 0.8rem 1rem;
+    display: block;
+    border: 2px;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}
+
+.dropdown-item:visited {
+    color: black;
+}
+
+.searchmain {
+    position: relative;
+    display: inline-block;
+}
+
+.searchmain:hover {
+    cursor: pointer;
+}
+
+.search-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    left: -360%;
+    top: 0.1%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1060px) {
+    .search-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: auto;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 1rem;
+        top: 100%;
+        left: -200%;
+        z-index: 1;
+    }
+}
+
+.searchText {
+    width: 100%;
+    border: none;
+    padding: 0.5rem 0.8rem 0.5rem;
+    width: 13rem;
+}
+
+.searchmain:hover,
+.search-content {
+    display: block;
+}
+
+.x-icon {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    /* Adjust the right position of the "x" icon */
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: grey;
+    /* Initially hide the "x" icon */
+}

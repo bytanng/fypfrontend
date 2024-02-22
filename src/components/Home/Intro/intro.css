@@ -1,0 +1,224 @@
+#intro {
+    height: calc(90vh);
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#introBar {
+    height: 7.5rem;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically */
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+
+.introBarContent {
+    width: 100%; /* Make the content within the section responsive */
+    max-width: 40rem; /* Adjust as needed based on your design */
+    text-align: center; /* Center text within the section */
+    margin-top: -1.3rem;
+}
+
+.introBarText {
+    text-align: center;
+    font-size: large;
+}
+
+.introBarPara {
+    font-size: small;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.introBarBtn {
+    background: #15F593;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.3rem; /* Adjust padding for better responsiveness */
+    border: none;
+    border-radius: 0.7rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 4rem; /* Make the button full width */
+    color: white;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+    top: -1.5rem;
+    right: 0;
+    object-fit: cf;
+    height: 90vh;
+    width: 100%;
+}
+
+.introContent{
+    height: 55vh;
+    width: 70vh;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-top: 13rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 1.5rem;
+}
+
+.hello{
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-decoration: underline;
+    color: white;
+}
+
+.introName {
+    color: #15F593;
+}
+
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.introBtn{
+    background: #0077B5;
+    margin: 1rem 0.5rem 1rem 0rem;
+    padding: 0.75rem 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    width: 6.5rem;
+    color: white;
+}
+
+.linkBtn :hover{
+    cursor: pointer;
+}
+
+.introBtn2{
+    margin: 1.9rem 0.5rem 1rem 0rem;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    width: 2.5rem;
+    height: 2.85rem;
+    font-size: 0.9rem;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.svg{
+    height: 2.3rem;
+    width: 2.3rem;
+    padding-bottom: 0.6rem;
+}
+
+.introBtn:hover {
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+  }
+
+.introBtn2:hover {
+    background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+}
+
+.imageintroBtn{
+    object-fit: cover;
+    margin: 0 0.5rem;
+    height: 1rem;
+}
+
+@media screen and (max-width:865px){
+    .introContent{
+        font-size: 4vw;
+    }
+    .hello{
+        font-size: 2vw;
+    }
+    .introPara{
+        font-size: 2vw;
+    }
+    .introBtn{
+        font-size: 0.6rem;
+    }
+
+    .buttons{
+        width:1.5vw;
+    }
+    
+    .introContent{
+        height: 55vh;
+        width: 50vh;
+        padding: 2rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3rem;
+        margin-top: 13rem;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (max-width:650px){
+    .introBtn2{
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media screen and (max-width:560px){
+    .introBtn2{
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .bg {
+        right: -50vw;
+    }
+    .introBtn{
+        width: 2rem;
+        height: 2.2rem;
+        font-size: 0.5rem;
+    }
+    .introBtn2{
+        width: 2rem;
+        height: 2.2rem;
+        padding-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .svg{
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+}
+
+.containerSlide {
+    width: 650px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.containerSlide img {
+    height: 500px;
+
+}

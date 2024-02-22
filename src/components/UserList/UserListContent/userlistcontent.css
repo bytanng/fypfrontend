@@ -1,0 +1,387 @@
+
+.userlistbody{
+    margin-top: -2rem;
+}
+
+.userlist-grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem;
+    gap: 2rem;
+    background-color: #F5F5F7;
+}
+
+.userlist-grid-container2{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.userlist-grid-item {
+    padding: 2rem 2.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.userlist-grid-1{
+    text-align: center;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    min-width: 15.8rem;
+}
+
+.userlist-grid-2 {
+    height: fit-content;
+    width: 25.5vw;
+    min-width: 15.8rem;
+}
+
+.userlist-grid-3{
+    height: fit-content;
+    width: 70vw;
+    min-width: 15.8rem;
+}
+
+@media screen and (max-width:1000px) {
+    .userlist-grid-container2{
+        flex-wrap: wrap;
+    }
+    .userlist-grid-2 {
+        height: fit-content;
+        width: 100%;
+    }
+    .userlist-grid-3 {
+        height: fit-content;
+        width: 100%;
+    }
+    .userlistfiltersearchBar{
+        max-width: 30%;
+        min-width: 7rem;
+    }
+
+}
+
+.userlistrecruiting{
+    color: #09CE68;
+}
+
+.userlistsearchBar{
+    font-size: medium;
+    width: 70%;
+    max-width: 70%;
+    padding: 0.5rem 1rem;
+    color: black;
+    border: none;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background: #F5F5F7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.userlistfiltersearchBar{
+    font-size: small;
+    width: 66%;
+    padding: 0.2rem 2rem;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    margin-bottom: 1rem;
+}
+
+.search-icon{
+    position: absolute;
+    margin-left: 0.6rem;
+    margin-top: 0.35rem;
+    color: grey;
+}
+
+.userlistsearchBtn{
+    background: #09CE78;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin: 2.5rem 0rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.userroleselector{
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 390;
+    font-size: 0.9rem;
+}
+
+.userbartitle-grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    padding-top: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    font-weight: 350;
+    margin-bottom: 0.4rem;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.userbartitle-grid-1{
+    width : 12%;
+    text-align: center;
+}
+
+.userbartitle-grid-2{
+    width: 20%;
+    text-align: center;
+}
+
+.userbartitle-grid-3{
+    width: 20%;
+    text-align: center;
+}
+
+.userbartitle-grid-4{
+    width: 9%;
+    text-align: center;
+}
+
+.userbartitle-grid-5{
+    width: 20%;
+    text-align: center;
+}
+
+.userbarresult-grid-1{
+    width : 12%;
+    color:#0066CC;
+    text-align: center;
+    font-weight: 400;
+}
+
+.userbarresult-grid-2{
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.userimg{
+    height: 2.7rem;
+    width: 2.7rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.userbarresult-grid-3{
+    width: 20%;
+    text-align: center;
+}
+
+.userbarresult-grid-4{
+    width: 9%;
+    text-align: center;
+}
+
+.userbarresult-grid-5{
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.clearbtn{
+    color: #0066CC;
+    float: inline-end;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.skillsfilter, .coursefilter, .yearfilter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.coursefilter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+.filtertitle{
+    margin: 1rem 0;
+}
+
+.listchkboxname{
+    font-weight: 350;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.userlistresultstitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.userlistsorting{
+    font-weight: 350;
+    font-size: small;
+    margin-left: auto;
+}
+
+.userlistresultheader{
+    display: inline-block;
+}
+
+
+/* .userlistresultbar{
+    width: 100%;
+    height: 13rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 2rem 0 0 2rem;
+    border: 1px solid #CDCDCD;
+    font-weight: 350;
+    margin-bottom: 1rem;
+    background-color: #F5F5F7;
+} */
+
+.userbarresult-grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    font-weight: 350;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 0.9rem;
+    height: fit-content;
+}
+
+.userlistresultbarcontent{
+    width: auto;
+    height: auto;
+}
+
+.userlistphase{
+    border-radius: 1rem;
+    background-color: #09CE78;
+    padding: 0.1rem 0.6rem;
+    color: white;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.userlistskillstag{
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 1rem;
+    background-color: #CE095F;
+    color: white;
+    padding: 0.15rem 0.45rem;
+    margin: 0.2rem;
+}
+
+.userlistImg{
+    margin-bottom: -1rem;
+    object-fit: cover;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.userlistpagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: small;
+    font-weight: 350;
+  }
+  
+  .userlistpagination a {
+    color: black;
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+  }
+  
+  .userlistpaginationn a.active {
+    background-color: #0066CC;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .userlistpagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 0.5rem;
+  }
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -50vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .userbartitle-grid-container{
+        font-size: 0.7rem;
+    }
+    .userbarresult-grid-container{
+        font-size: 0.7rem;
+    }
+    .userlistskillstag{
+        margin-right: 0.4rem;
+        font-size: 0.6rem;
+        font-weight: 390;
+        border-radius: 1rem;
+        background-color: #CE095F;
+        color: white;
+        padding: 0.15rem 0.45rem;
+        margin: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .userbartitle-grid-2, .userbartitle-grid-3, .userbartitle-grid-4{
+        display: none;
+    }
+
+    .userbarresult-grid-2, .userbarresult-grid-3, .userbarresult-grid-4{
+        display: none;
+    }
+    .userbartitle-grid-container, .userbarresult-grid-container{
+        gap: 3rem;
+        font-size: 0.8rem;
+    }
+    .userbartitle-grid-1{
+        margin-left: -0.4rem;
+    }
+}
