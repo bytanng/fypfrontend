@@ -21,7 +21,7 @@ const ProjectListContent = () => {
             <h3 style={{ fontWeight: '400' }}>Filters</h3>
             <hr style={{ marginTop: '1rem' }} />
             <form className='categoryfilter'>
-              <p className='filtertitle'>Category<a href="" className='clearbtn'>Clear</a></p>
+              <p className='filtertitle'>Category<a href="/user" className='clearbtn'>Clear</a></p>
               <div>
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 <input type="text" className='projectlistfiltersearchBar' placeholder="Search category" required></input>
@@ -37,7 +37,7 @@ const ProjectListContent = () => {
             </form>
 
             <form className='skillsreqfilter'>
-              <p className='filtertitle'>Skills Required<a href="" className='clearbtn'>Clear</a></p>
+              <p className='filtertitle'>Skills Required<a href="/user" className='clearbtn'>Clear</a></p>
               <div>
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 <input type="text" className='projectlistfiltersearchBar' placeholder="Search skills" required></input>
@@ -53,7 +53,7 @@ const ProjectListContent = () => {
             </form>
 
             <form className='phasefilter'>
-              <p className='filtertitle'>Phase<a href="" className='clearbtn'>Clear</a></p>
+              <p className='filtertitle'>Phase<a href="/user" className='clearbtn'>Clear</a></p>
               <div>
                 <input type="checkbox" className='listchkbox' id="phasechkbox" name="phasechkbox" value="onboarding"></input>
                 <label for="phasechkchkbox" className='listchkboxname'>Onboarding</label>
@@ -72,7 +72,7 @@ const ProjectListContent = () => {
               </div>
             </form>
             <form className='recfilter'>
-              <p className='filtertitle'>Recruiting<a href="" className='clearbtn'>Clear</a></p>
+              <p className='filtertitle'>Recruiting<a href="/user" className='clearbtn'>Clear</a></p>
               <div>
                 <input type="checkbox" className='listchkbox' id="recchkbox" name="recchkbox" value="open"></input>
                 <label for="recchkchkbox" className='listchkboxname'>Open</label>
@@ -104,11 +104,11 @@ const ProjectListContent = () => {
             <div className='projectlistresults'>
               <div className='projectbarresult-grid-container'>
                 <div className='projectbarresult-grid-1'>
-                  <img src={trackingapp} className="projectimg" />
+                  <img src={trackingapp} className="projectimg" alt='' />
                 </div>
                 <div className='projectbarresult-flex'>
                   <div className='projectbarresult-grid-2'>
-                    <h3 style={{ fontWeight: '400' }}>Mobile Tracking App</h3>
+                    <a href='project'><h3 style={{ fontWeight: '400' }}>Mobile Tracking App</h3></a>
                   </div>
                   <div className='projectbarresult-grid-3'>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
@@ -134,11 +134,11 @@ const ProjectListContent = () => {
 
               <div className='projectbarresult-grid-container'>
                 <div className='projectbarresult-grid-1'>
-                  <img src={trackingapp} className="projectimg" />
+                  <img src={trackingapp} className="projectimg" alt='' />
                 </div>
                 <div className='projectbarresult-flex'>
                   <div className='projectbarresult-grid-2'>
-                    <h3 style={{ fontWeight: '400' }}>Mobile Tracking App</h3>
+                    <a href='project'><h3 style={{ fontWeight: '400' }}>Mobile Tracking App</h3></a>
                   </div>
                   <div className='projectbarresult-grid-3'>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
@@ -162,18 +162,15 @@ const ProjectListContent = () => {
                 </div>
               </div>
 
-              
-              
-              
               <div class="projectlistpagination">
-                <a href="#">&laquo;</a>
-                <a href="#">1</a>
-                <a href="#" class="active">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">&raquo;</a>
+                <a href="/">&laquo;</a>
+                <a href="/">1</a>
+                <a href="/" class="active">2</a>
+                <a href="/">3</a>
+                <a href="/">4</a>
+                <a href="/">5</a>
+                <a href="/">6</a>
+                <a href="/">&raquo;</a>
               </div>
             </div>
             <br />

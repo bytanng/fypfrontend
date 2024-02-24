@@ -9,7 +9,7 @@ const FAQquestions = (props) => {
         setOpenItems([]);
     }, [props.btnType]);
 
-    if (props.btnType == 'generalbtn'){
+    if (props.btnType === 'generalbtn'){
         faqData = [
             { question: 'How can I sign up with my NTU email ?', answer: 'You can do that on the sign up page' },
             { question: 'Lorem ipsum dolor sit amet 1 ?', answer: 'answer 2' },
@@ -19,7 +19,7 @@ const FAQquestions = (props) => {
             { question: 'Lorem ipsum dolor sit amet 2?', answer: 'answer 3' },
         ];
     }
-    else if (props.btnType == 'proposerbtn'){
+    else if (props.btnType === 'proposerbtn'){
         faqData = [
             { question: 'ABC', answer: 'ABC' },
             { question: 'Lorem ipsum dolor sit amet 1 ?', answer: 'answer 2' },
@@ -29,7 +29,7 @@ const FAQquestions = (props) => {
             { question: 'Lorem ipsum dolor sit amet 2?', answer: 'answer 3' },
         ];
     }
-    else if (props.btnType == 'seekerbtn'){
+    else if (props.btnType === 'seekerbtn'){
         faqData = [
             { question: 'CDE', answer: 'You can do that on the sign up' },
             { question: 'Lorem ipsum dolor sit amet 1 ?', answer: 'answer 2' },

@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import './contact.css';
-import python from '../../../assets/python.png';
 import emailjs from '@emailjs/browser';
 import facebook from '../../../assets/facebook-icon.png';
 import instagram from '../../../assets/instagram.png';

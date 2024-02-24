@@ -53,6 +53,11 @@
     color: white;
 }
 
+.introBarBtn:hover{
+    cursor: pointer;
+    background-color: rgba(21, 245, 147, 0.8);
+}
+
 .bg{
     position: absolute;
     z-index: -1;

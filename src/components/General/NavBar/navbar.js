@@ -20,7 +20,7 @@ const Navbar = () => {
             </RouterLink>
             <div className='desktopMenu'>
                 <div className='dropdown'>
-                    <RouterLink to='/contact' className='desktopMenuListItem'>
+                    <RouterLink to='/' className='desktopMenuListItem'>
                         Explore
                         <i className='fas fa-caret-down arrow-icon' />
                     </RouterLink>
@@ -34,9 +34,11 @@ const Navbar = () => {
                     </div>
                 </div>
                 <RouterLink to='/project' className='desktopMenuListItem'>Start a Project</RouterLink>
-                <ScrollLink to='projects' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
+                <RouterLink to='/' className='desktopMenuListItem'>How it Works</RouterLink>
+
+                {/* <ScrollLink to='howitworks' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>
                     How it Works
-                </ScrollLink>
+                </ScrollLink> */}
             </div>
 
             <div className='desktopMenuBtns'>

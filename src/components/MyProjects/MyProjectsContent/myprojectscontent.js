@@ -47,10 +47,10 @@ const MyProjectsContent = () => {
 
                         <div className='myprojsresult-container'>
                             <div className='myprojsresult-grid-1'>
-                                <a href=""><span>Rajk98</span></a>
+                                <a href="/user"><span>Rajk98</span></a>
                             </div>
                             <div className='myprojsresult-grid-2'>
-                                <img src={raj} className='userimg'></img>
+                                <img src={raj} className='userimg' alt=''></img>
                                 <span>Raj Kumar</span>
                             </div>
                             <div className='myprojsresult-grid-3'>

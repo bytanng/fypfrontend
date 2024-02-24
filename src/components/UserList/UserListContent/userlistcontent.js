@@ -22,7 +22,7 @@ const UserListContent = () => {
                         <h3 style={{ fontWeight: '400' }}>Filters</h3>
                         <hr style={{ marginTop: '1rem' }} />
                         <form className='skillsfilter'>
-                            <p className='filtertitle'>Skills<a href="" className='clearbtn'>Clear</a></p>
+                            <p className='filtertitle'>Skills<a href="/user" className='clearbtn'>Clear</a></p>
                             <div>
                                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
                                 <input type="text" className='userlistfiltersearchBar' placeholder="Search skills" required></input>
@@ -38,7 +38,7 @@ const UserListContent = () => {
                         </form>
 
                         <form className='coursefilter'>
-                            <p className='filtertitle'>Skills Required<a href="" className='clearbtn'>Clear</a></p>
+                            <p className='filtertitle'>Skills Required<a href="/user" className='clearbtn'>Clear</a></p>
                             <div>
                                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
                                 <input type="text" className='userlistfiltersearchBar' placeholder="Search course" required></input>
@@ -54,7 +54,7 @@ const UserListContent = () => {
                         </form>
 
                         <form className='yearfilter'>
-                            <p className='filtertitle'>Year<a href="" className='clearbtn'>Clear</a></p>
+                            <p className='filtertitle'>Year<a href="/user" className='clearbtn'>Clear</a></p>
                             <div>
                                 <input type="checkbox" className='listchkbox' id="yearchkbox" name="yearchkbox" value="open"></input>
                                 <label for="yearchkchkbox" className='listchkboxname'>1</label>
@@ -112,10 +112,10 @@ const UserListContent = () => {
 
                             <div className='userbarresult-grid-container'>
                                 <div className='userbarresult-grid-1'>
-                                    <a href=""><span>Rajk98</span></a>
+                                    <a href="/user"><span>Rajk98</span></a>
                                 </div>
                                 <div className='userbarresult-grid-2'>
-                                    <img src={raj} className='userimg'></img>
+                                    <img src={raj} className='userimg' alt=''></img>
                                     <span>Raj Kumar</span>
                                 </div>
                                 <div className='userbarresult-grid-3'>
@@ -133,10 +133,10 @@ const UserListContent = () => {
 
                             <div className='userbarresult-grid-container'>
                                 <div className='userbarresult-grid-1'>
-                                    <a href=""><span>Rajk98</span></a>
+                                    <a href="/user"><span>Rajk98</span></a>
                                 </div>
                                 <div className='userbarresult-grid-2'>
-                                    <img src={raj} className='userimg'></img>
+                                    <img src={raj} className='userimg' alt=''></img>
                                     <span>Raj Kumar</span>
                                 </div>
                                 <div className='userbarresult-grid-3'>
@@ -154,14 +154,14 @@ const UserListContent = () => {
 
 
                             <div class="userlistpagination">
-                                <a href="#">&laquo;</a>
-                                <a href="#">1</a>
-                                <a href="#" class="active">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
-                                <a href="#">6</a>
-                                <a href="#">&raquo;</a>
+                                <a href="/">&laquo;</a>
+                                <a href="/">1</a>
+                                <a href="/" class="active">2</a>
+                                <a href="/">3</a>
+                                <a href="/">4</a>
+                                <a href="/">5</a>
+                                <a href="/">6</a>
+                                <a href="/">&raquo;</a>
                             </div>
                         </div>
                         <br />
