@@ -157,6 +157,7 @@
     left: -80%;
     border: none;
     border-radius: 1rem;
+    color: black;
     /* Adjust this value to position the dropdown to the left */
 }
 
@@ -166,6 +167,7 @@
     border: 2px;
     border-radius: 1rem;
     font-size: 1rem;
+    color: black;
 }
 
 .dropdown:hover .dropdown-content,
