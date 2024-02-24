@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Web App for student related activities (front-end)
+Final Year Project - Web App for student related activities (front-end)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Development is currently in progress.
 
-## Available Scripts
+This repo contains the wireframes designed for my final year project - Web App for student related activities and the interim report leading up to the design.
 
-In the project directory, you can run:
+The wireframes were designed with figma: https://www.figma.com/file/j93DV6Y0p4VMrJUYCTiOOz/FYP-Wireframes-(Copy)?type=design&node-id=1%3A1206&mode=design&t=69UirZIZEJd0QBBQ-1
 
-### `npm start`
+Motivations
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In recent years, Nanyang Technological University (NTU) has received feedback from students highlighting the absence of an ideation platform. This hampers students’ ability to connect with peers who shares similar interests and skillsets, making it challenging to form teams to participate in competitions and entrepreneurial projects. In collaboration with the NTU Innovation and Entrepreneurship (I&E) department, which aims to promote holistic entrepreneurship education and experiential learning, this project aims to empower students with the tools and resources needed to form effective project teams, collaboration, and innovation, through a web application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Objectives and Scope 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The primary objectives of this project are to design and develop a user-centric web application aimed at supporting the dynamic needs of students within NTU, fostering a positive user experience. The application will serve as a digital platform for students to feature project ideas, showcase their skillsets, and express personal interests. This facilitates the seamless formation of student teams across diverse project types, spanning competitions, entrepreneurship ventures, and collaborative projects of any nature. Additionally, the application aspires to foster a strong social support system within the NTU community, encouraging cross-disciplinary interactions enhancing the overall academic experience. Ultimately, this project aims to deliver an intuitive, engaging, and visually appealing application, aligning with the critical role of User Interface (UI) and User Experience (UI/UX), providing great user experience, allowing NTU students of similar interest to connect.
